@@ -1,98 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
 }
 
 .header h1 {
     text-align: center;
-    font-size: 300%;
-    color: white;
+    font-size: 400%;
+    margin-bottom: 0;
 }
 
 .header {
-    background-image: url(productphoto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0;
     margin: 0;
-}
+    /* margin-top: 10vh; */
+    display: grid;
+    height: 120vh;
+    grid-template-areas:
+        'header header header'
+        'left main right';
+    color: white;
 
-/*  FONTS */
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 1000;
     font-style: normal;
+
+    grid-template-rows: 25%;
+
+    /* grid-template-columns: 33%; */
 }
 
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+
+.header .name {
+    grid-area: header;
 }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.header h2 {
+    /* text-align: center; */
+    font-size: 180%;
+    color: #d6f0fa;
 }
 
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+.header .image {
+    background-image: url(HemeaseCropped.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    height: 32vw;
+    width: 35vw;
+    /* width: 75vh; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10000px 100px rgba(44, 178, 231, 0.425);
+    grid-area: main;
 }
 
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+.header .leftBox {
+    padding: 30px;
+    grid-area: left;
+    text-align: left;
 }
 
-.roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+.header .rightBox {
+    padding: 30px;
+    grid-area: right;
+    text-align: right;
 }
 
-.roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
+.section {
+    height: 100vh;
 }
 
-.roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
+.gray {
+    background-color: #161617;
 }
 
-.roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+.black {
+    background-color: black;
 }
 
-.roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
+.navbar {
+    margin-top: 0px;
+    height: 5vh;
+    position: sticky;
+    background-color: rgb(0, 0, 0);
 }
 
-.roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
+.navbar h1 
+{
+    margin: 0;
+    margin-left: 10px;
+    transform: translate(0%, 50%);
+    font-size: 100%;
 }
