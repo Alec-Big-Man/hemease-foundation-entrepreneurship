@@ -21,6 +21,7 @@ body {
     /* margin-top: 10vh; */
     display: grid;
     height: 120vh;
+    width: 100%;
     grid-template-areas:
         'header header header'
         'left main right';
@@ -127,11 +128,20 @@ body {
     width: 25vw;
     margin: 0% 2%;
     border-radius: 50px;
-    padding: 1%
+    padding: 1%;
+    box-shadow: 10px 10px 20px 2px rgb(0, 0, 0);
 }
 
 .card h1 {
+    margin-top: 10%;
+    margin-left: 3%;
     text-align: left;
+}
+.card p {
+    border-left: solid 5px rgba(194, 208, 241, 0.509);;
+    padding: 5%;
+    color: rgba(255, 255, 255, 0.509);
+    font-size: 120%;
 }
 
 #card1 {
@@ -163,7 +173,7 @@ body:has(#card1:hover) #card3 {
 
 #card1>* {
     position: relative;
-    z-index: 3ß;
+    z-index: 3;
 }
 
 #card1::before {
@@ -178,8 +188,9 @@ body:has(#card1:hover) #card3 {
 }
 
 #card2 {
+    background-image: url("time.jpg");
+    filter: blur(0px);
     z-index: 2;
-    background-color: rgb(63, 22, 19);
     transition: .3s;
 }
 
@@ -200,14 +211,35 @@ body:has(#card2:hover) #card3 {
     z-index: 2;
 }
 
+#card2::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50px;
+    backdrop-filter: brightness(.5) blur(3px);
+}
+
 #card3 {
-    /* background-image: url("productphoto.jpg"); */
-    background-color: rgb(15, 45, 67);
+    background-image: url("bottom.jpeg");
     filter: blur(0px);
     translate: -40% 2%;
     rotate: 5deg;
     z-index: 1;
     transition: .3s;
+}
+
+#card3::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50px;
+    backdrop-filter: brightness(.5) blur(3px);
 }
 
 #card3>* {
