@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="image-carousel.css">
+    <script src="image-carousel.js"></script>
+</head>
+
+<title>
+    HemEase
+</title>
+<link rel="shortcut icon" href="logo.jpg" />
+
+<body onload="firstLoad()">
+    <div class="navbar">
+        <a href="index.html">
+            <h1> H &nbsp;E &nbsp;M &nbsp;E &nbsp;A &nbsp;S &nbsp;E</h1>
+        </a>
+        <a class="button"> Buy Now </a>
+    </div>
+
+    <div class="section gray buy-page">
+        <div class="left">
+            <h1> Buy Hemease</h1>
+            <h3>From $199.99</h3>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="productphoto.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="bottom.jpeg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="productphoto2.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div class="dotcontainer">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+
+    <div class="section black">
+        <h1> Technical Features </h1>
+    </div>
+
+    <footer>
+        <div> © 2024 <a href="https://alec.bearfin.net" target="_blank">Alec Berenshteyn</a> | For use in MGT 2064 |
+            Licensed under <a href="https://opensource.org/license/mit" target="_blank">MIT License</a></div>
+    </footer>
+</body>
+
+</html>
