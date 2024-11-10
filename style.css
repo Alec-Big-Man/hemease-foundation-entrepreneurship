@@ -319,17 +319,18 @@ a h1 {
 }
 
 .button {
-    padding: 3px 10px;
+    padding: 3px 15px;
     background-color: rgb(0, 76, 255);
     border-radius: 25px;
     transition: .1s;
     color: white;
     text-decoration: none;
+    border: none;
 }
 
 .button:hover {
     cursor: pointer;
-    filter: brightness(1.5);
+    background-color: rgb(34, 81, 191);
     transition: .1s
 }
 
