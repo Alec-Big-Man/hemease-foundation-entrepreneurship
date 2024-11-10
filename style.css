@@ -232,7 +232,7 @@ body:has(#card2:hover) #card3 {
     left: 0;
     position: absolute;
     border-radius: 50px;
-    backdrop-filter: brightness(.5) blur(3px);
+    backdrop-filter: brightness(.4) blur(3px);
 }
 
 #card3 {
