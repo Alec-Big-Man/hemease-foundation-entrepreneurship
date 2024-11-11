@@ -368,3 +368,7 @@ footer a {
 .feature-card p {
     font-size: 150%;
 }
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
