@@ -42,6 +42,14 @@ body {
     grid-area: header;
 }
 
+.name h2 {
+    text-align: center;
+    font-size: 100%;
+    translate: 0 -20px;
+    font-weight: 300;
+    letter-spacing: 10px;
+}
+
 .header h2 {
     /* text-align: center; */
     font-size: 180%;
@@ -49,7 +57,7 @@ body {
 }
 
 .header .image {
-    background-image: url(HemeaseCropped.png);
+    background-image: url("HemeaseCropped.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -371,4 +379,23 @@ footer a {
 
 a, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;
+}
+
+spline-viewer
+{
+    position: absolute;
+    width: 90%;
+    height: 85%;
+}
+
+.spline-shadow
+{
+    width: 200px;
+    height: 100px;
+    /* background-color: white; */
+    margin-left: calc(48vw - 150px);
+    margin-top: calc(45vh - 100px);
+    box-shadow: 0px -50px 1000px 150px rgba(44, 178, 231, 0.388),
+    0px 50px 1000px 150px rgba(247, 0, 255, 0.158);
+    border-radius: 50px;
 }
