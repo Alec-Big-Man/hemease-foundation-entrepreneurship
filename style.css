@@ -57,7 +57,7 @@ body {
 }
 
 .header .image {
-    background-image: url("HemeaseCropped.png");
+    background-image: url("images/HemeaseCropped.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -119,7 +119,7 @@ body {
 
 .gray {
     background-color: #161617;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .black p {
@@ -166,7 +166,7 @@ body {
 }
 
 #card1 {
-    background-image: url("productphoto.jpg");
+    background-image: url("images/productphoto.jpg");
     filter: blur(0px);
     translate: 40% 2%;
     rotate: -5deg;
@@ -209,7 +209,7 @@ body:has(#card1:hover) #card3 {
 }
 
 #card2 {
-    background-image: url("time.jpg");
+    background-image: url("images/time.jpg");
     filter: blur(0px);
     z-index: 2;
     transition: .3s;
@@ -244,7 +244,7 @@ body:has(#card2:hover) #card3 {
 }
 
 #card3 {
-    background-image: url("bottom.jpeg");
+    background-image: url("images/bottom.jpeg");
     filter: blur(0px);
     translate: -40% 2%;
     rotate: 5deg;
@@ -377,25 +377,131 @@ footer a {
     font-size: 150%;
 }
 
-a, a:hover, a:active, a:visited, a:focus {
-    text-decoration:none;
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
 }
 
-spline-viewer
-{
+spline-viewer {
     position: absolute;
     width: 90%;
     height: 85%;
 }
 
-.spline-shadow
-{
+.spline-shadow {
     width: 200px;
     height: 100px;
     /* background-color: white; */
     margin-left: calc(48vw - 150px);
     margin-top: calc(45vh - 100px);
     box-shadow: 0px -50px 1000px 150px rgba(44, 178, 231, 0.388),
-    0px 50px 1000px 150px rgba(247, 0, 255, 0.158);
+        0px 50px 1000px 150px rgba(247, 0, 255, 0.158);
     border-radius: 50px;
+}
+
+.spacer {
+    height: 100px;
+}
+
+.about-container {
+    display: block;
+}
+
+.about-card {
+    vertical-align: top;
+    width: 14.28%;
+    margin: 0% 1%;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #28282a;
+    transition: .3s;
+}
+
+.about-card:hover {
+    scale: 1.2;
+    transition: .3s;
+    box-shadow: rgb(104, 104, 104) 0px 0px 0px 5px;
+}
+
+.about-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.about-card h1 {
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.about-card h2 {
+    padding: 0px 10px;
+    margin-top: 0;
+    /* color: white; */
+    font-style: italic;
+}
+
+.about-card p {
+    padding: 10px;
+    padding-top: 0;
+}
+
+/* Animations */
+@keyframes wipe-enter {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(.5, .5);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .anim-side {
+        animation-name: wipe-enter;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    .about-card{
+        width: 25%;
+        margin: 0% 3.9%;
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .about-card{
+        width: 33%;
+        margin: 0% 8%;
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .about-card{
+        width: 90%;
+        margin: 0% 5%;
+        margin-bottom: 4%;
+    }
+
+    .about-card:hover {
+        scale: 1;
+        transition: .3s;
+        box-shadow: rgb(104, 104, 104) 0px 0px 0px 5px;
+    }
 }

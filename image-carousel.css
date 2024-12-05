@@ -13,12 +13,16 @@ body {
 img {
     vertical-align: middle;
     border-radius: 50px;
+    margin-top: auto;
 }
 
 /* Slideshow container */
 .slideshow-container {
     width: 60vh;
+    /* height: 60vh; */
     position: relative;
+    background-color: #1a1a1a;
+    border-radius: 50px;
 }
 
 /* Next & previous buttons */
